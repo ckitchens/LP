@@ -3,17 +3,14 @@ html{
 
 }
 
-body{ 
-color:#BF571B;
+body{
+color:white;
 margin:0px;
 font-family: 'Barlow', sans-serif;
-background-color: #5A6B8C;
+background-color: white;
 background-size: 100%;
 background-attachment: fixed;
-}
-
-li{
-  font-family: 'Barlow', sans-serif;
+background-image: url("images/LeftT.png")
 }
 
 .anchor{
@@ -23,31 +20,65 @@ li{
 
 .content{
   width: auto;
-  background-color: #F2B544;
+  background-color: none;
   padding:50px;
   margin:70px 70px 70px 70px; /*change*/
 }
 
-/*------------------------------------Middle Nav---------------------------------------*/
-.topnav{
-  width: 100%;
+/*-------------------------------Navigation---------------------------------------*/
+.logo{
   display:block;
+  text-align: left;
+  margin-left:90px ;
 }
-.topnav a {
+.header{
   font-family: 'Barlow', sans-serif;
-  display: block;
-  color: #f2f2f2;
-  padding: 14px 16px;
+  z-index:1;
+  width:100%;
+  top:0px;
+}
+.header h1{
+  color: black;
+  margin:0px;
+  padding:10px;
+  font-size: 1.25em;
+}
+
+.topnav{
+  font-family: 'Barlow', sans-serif;
+  background-color:transparent;
+  width: 100%;
+  display:grid;
+  text-align: right;
+  transition:all 0.3s;
+  top:0px;
+  margin-top:40px;
+}
+.topnav a{
+  font-family: 'Barlow', sans-serif;
   height:auto;
+  display: block;
   text-decoration: none;
+  font-size: 17px;
+  background-color: transparent;
+  color:white;
 }
 .topnav a:hover {
-  background-color: yellow;
+  background-color: white;
 }
 .topnav .icon {
   display: none;
 }
 
+/*-------------------------------------Footer-------------------------------*/
+.footer {
+  left:0;
+  bottom:0;
+  width: 100%;
+  background-color: white;
+  color: green;
+  text-align: center;
+ }
 
 /*-------------------------------------Contact Me-------------------------------*/
 form{
@@ -74,23 +105,13 @@ form{
   .row {
       grid-template-columns: auto ;
   }
-  .flip-box{
-    width: 100% !important;
-    margin:0px !important;
-    margin-bottom: 50px !important;
-    margin-right: 20px !important;
-  }
+
   .header{
     display:grid;
     grid-template-columns: 30% 20% auto;
     height:50px;
   }
-  .menuImg {
-    width: 90%;
-    height: auto;
-    display: block;
-    padding:5px 0 0 5px;
-  }
+
   .topnav{
     width:40%;
     grid-template-columns: auto 60px;
@@ -126,64 +147,21 @@ form{
   .responsive .link{
     margin-right: 60px;
   }
-  .gallery{
-    grid-template-columns: 33% 33% 33%;
-  }
-  .zoom_view{
-    grid-template-columns: 20% 30% 30% 20%;
-  }
-  .zoom_img{
-    grid-column: 2/4;
-  }
-  .left_arrow{
-    grid-column: 1/2;
-  }
-  .right_arrow{
-    grid-column: 4/5;
-  }
-  .close{
-    grid-column: 4/5;
-  }
-  .storeItem{
-    grid-template-columns: auto;
-    text-align: center;
-  }
 }
 /*-------------------------------------desktop responsive-------------------------------*/
 @media screen and (min-width: 901px) {
   .mobile{
     display:none;
   }
-  .donateButton{
-    top:-1px;
-  }
   .topnav{
     grid-template-columns: 18% 18% 18% 18% 18% auto;
     }
   .topnav a{
-        margin: 5px 0;
+    margin: 5px 0;
     }
   .topnav a:not(:first-child){
     }
   .topnav a.icon {
     display:none;
-  }
-  .gallery{
-    grid-template-columns: 25% 25% 25% 25%;
-  }
-  .zoom_view{
-    grid-template-columns: 25% 10% 15% 15% 10% 25%;
-  }
-  .zoom_img{
-    grid-column: 3/5;
-  }
-  .left_arrow{
-    grid-column: 2/3;
-  }
-  .right_arrow{
-    grid-column: 5/6;
-  }
-  .close{
-    grid-column: 5/6;
   }
 }
