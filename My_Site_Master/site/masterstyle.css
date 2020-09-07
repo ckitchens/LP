@@ -1,28 +1,17 @@
 /*-------------general---------------------------------------------------------------------*/
 html{
-
 }
 
 body{
 color:white;
 margin:0px;
 font-family: 'Barlow', sans-serif;
-background-color: white;
-background-size: 100%;
-background-attachment: fixed;
-background-image: url("images/LeftT.png")
-}
-
-.anchor{
-  position:relative;
-  top: -75px;
+background-color: #363E50;
 }
 
 .content{
-  width: auto;
-  background-color: none;
-  padding:50px;
-  margin:70px 70px 70px 70px; /*change*/
+  width:auto;
+  margin:20px 20px 20px 80px; /*left one is left margin*/
 }
 
 /*-------------------------------Navigation---------------------------------------*/
@@ -37,12 +26,6 @@ background-image: url("images/LeftT.png")
   width:100%;
   top:0px;
 }
-.header h1{
-  color: black;
-  margin:0px;
-  padding:10px;
-  font-size: 1.25em;
-}
 
 .topnav{
   font-family: 'Barlow', sans-serif;
@@ -50,13 +33,10 @@ background-image: url("images/LeftT.png")
   width: 100%;
   display:grid;
   text-align: right;
-  transition:all 0.3s;
-  top:0px;
   margin-top:40px;
 }
 .topnav a{
   font-family: 'Barlow', sans-serif;
-  height:auto;
   display: block;
   text-decoration: none;
   font-size: 17px;
@@ -72,14 +52,23 @@ background-image: url("images/LeftT.png")
 
 /*-------------------------------------Footer-------------------------------*/
 .footer {
-  left:0;
+  position:fixed;
   bottom:0;
   width: 100%;
   background-color: white;
-  color: green;
-  text-align: center;
+  color: #363E50;
  }
 
+.footer h1{
+  text-align: left;
+  font-size: 15px;
+  display:grid;
+}
+
+.footer p{
+  font-size: 10px;
+
+}
 /*-------------------------------------Contact Me-------------------------------*/
 form{
 
@@ -92,11 +81,11 @@ form{
 /*-------------------------------------mobile responsive-------------------------------*/
 
 @media screen and (max-width: 600px) {
-  .gallery{
-    grid-template-columns: 50% 50%;
+  img{
+    max-width:100%;
+    height:auto;
   }
-}
-
+  }
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 900px) {
   .desktop{
@@ -113,39 +102,39 @@ form{
   }
 
   .topnav{
-    width:40%;
+    width:100%; /*when it scales down, this controls logo placement*/
     grid-template-columns: auto 60px;
     position:absolute;
     right:0px;
   }
   .topnav a{
-    text-align: right;
+
   }
-  .topnav a:not(.active) {
+  
+/*  .topnav a:not(.active) {
     display: none;
-  }
+  }*/
+
+
   .topnav a.icon {
     display:block;
     padding:13px 10px 10px 10px;
     margin:0px;
     position: absolute;
-    right:15px;
+
   }
   .topnav.responsive {
     grid-template-columns: auto;
     opacity:.8;
   }
   .topnav.responsive.icon {
-    position: absolute;
-    right: 15px;
-    top: 0;
+
   }
   .topnav.responsive a {
     display: block;
-    text-align: right;
   }
   .responsive .link{
-    margin-right: 60px;
+
   }
 }
 /*-------------------------------------desktop responsive-------------------------------*/
@@ -154,7 +143,7 @@ form{
     display:none;
   }
   .topnav{
-    grid-template-columns: 18% 18% 18% 18% 18% auto;
+    grid-template-columns: 18% 18% 18% 18% auto;
     }
   .topnav a{
     margin: 5px 0;
