@@ -5,11 +5,12 @@ html{
 body{
 color:white;
 margin:0px;
-font-family: 'Barlow', sans-serif;
 background-color: white;
 
 /* #363E50 */
 }
+
+
 
 .content{
   width:auto;
@@ -17,27 +18,42 @@ background-color: white;
   }
 
 .contacttext{
+  font-family: 'Bitter', serif;
+
   text-align: center;
   color: black;
 }
 
-.containerbox{
+.contacttext p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+  font-family: 'Bitter', serif;
+}
+
+.container{
     display: flex;
     border: 1px black solid;
-    justify-content: left;
+    justify-content: right;
+    align-items: right;
 }
 .contactcontent{
+
   display: flex;
-  border: 1px black solid;
-  justify-content: left;
+  align-items: right;
+  justify-content: ;
   color: black;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 .contactcontent ul{
-  padding-left: 30em;
   list-style: none;
 }
 
 .contactcontent label{
+  font-family: 'Open Sans', sans-serif;
+
   margin-left: auto;
   display: inline-block;
   width: 150px;
@@ -47,13 +63,25 @@ background-color: white;
 
 .messagetext{
   text-align: center;
+}
 
+textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input{
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
 }
 
 
 
 
-}
+
+
 
 /*-------------------------------Navigation---------------------------------------*/
 .logo{
@@ -126,6 +154,19 @@ form{
     max-width:100%;
     height:auto;
   }
+  .contenttext{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .contenttext label{
+    display: block;
+    text-align: center;
+  }
+
   }
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 900px) {
@@ -177,6 +218,15 @@ form{
   .responsive .link{
 
   }
+
+  .contactcontent{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 }
 /*-------------------------------------desktop responsive-------------------------------*/
 @media screen and (min-width: 901px) {
