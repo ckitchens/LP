@@ -3,23 +3,96 @@ html{
 }
 
 body{
-color:white;
 margin:0px;
+font-family: 'Bitter', serif;
+font-family: 'Open Sans', sans-serif;
 background-color: white;
-
-/* #363E50 */
 }
-
-
 
 .content{
   width:auto;
   margin:20px 20px 20px 80px; /*left one is left margin*/
-  }
+}
+
+/*-------------------------------Navigation---------------------------------------*/
+.header{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #363E50;
+  width:100%;
+  top:0px;
+}
+
+.topnav{
+  font-family: 'Open Sans', sans-serif;
+  background-color:transparent;
+  width: 100%;
+  display:grid;
+  background-color: #363E50;
+  align-items: center;
+}
+.topnav a{
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  color:white;
+  padding:10px;
+}
+.topnav a:hover {
+  color: #9fc131;
+}
+
+.topnav a img{
+  width:20%;
+  height:50%;
+  margin-left:15%;
+}
+/*-------------------------------------Body-------------------------------*/
+
+.container{
+  width:84%;
+  height:100%;
+  position:relative;
+  margin-top:15%;
+  left:10%;
+  color:#363E50;
+
+}
+.hello{
+  font-family: 'Bitter', serif;
+  position:absolute;
+  font-size: 60px;
+  top:-4%;
+  left:18%;
+}
+
+.our{
+  font-family: 'Bitter', serif;
+  position:absolute;
+  font-size: 60px;
+  top:28%;
+  left:49%;
+}
+
+.intro{
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  font-size:20px;
+  top:15%;
+  left:20%;
+}
+.boxes{
+  margin-left: 15%;
+  margin-bottom: 30%
+
+}
+
+/*-------------------------------------Form-------------------------------*/
 
 .contacttext{
+  margin-top: 10%;
+  margin-bottom: 2%;
   font-family: 'Bitter', serif;
-
   text-align: center;
   color: black;
 }
@@ -34,12 +107,11 @@ h3{
 
 .container{
     display: flex;
-    border: 1px black solid;
+
     justify-content: right;
     align-items: right;
 }
 .contactcontent{
-
   display: flex;
   align-items: right;
   justify-content: ;
@@ -53,7 +125,6 @@ h3{
 
 .contactcontent label{
   font-family: 'Open Sans', sans-serif;
-
   margin-left: auto;
   display: inline-block;
   width: 150px;
@@ -77,66 +148,41 @@ input{
       border-radius: 5px;
 }
 
-
-
-
-
-
-
-/*-------------------------------Navigation---------------------------------------*/
-.logo{
-  display:block;
-  text-align: left;
-  margin-left:90px ;
-}
-.header{
-  font-family: 'Barlow', sans-serif;
-  z-index:1;
-  width:100%;
-  top:0px;
-}
-
-.topnav{
-  font-family: 'Barlow', sans-serif;
-  background-color:transparent;
-  width: 100%;
-  display:grid;
-  text-align: right;
-  margin-top:40px;
-}
-.topnav a{
-  font-family: 'Barlow', sans-serif;
-  display: block;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: transparent;
-  color:white;
-}
-.topnav a:hover {
-  background-color: white;
-}
-.topnav .icon {
-  display: none;
-}
-
 /*-------------------------------------Footer-------------------------------*/
 .footer {
-  position:fixed;
-  bottom:0;
+  position:sticky;
   width: 100%;
-  background-color: white;
-  color: #363E50;
+  display:grid;
+  background-color: #363E50;
+  color: white;
+  bottom: 0;
  }
 
 .footer h1{
+  font-family: 'Bitter', serif;
   text-align: left;
-  font-size: 15px;
+  font-size: 18px;
   display:grid;
+  margin:20px;
 }
 
 .footer p{
   font-size: 10px;
+}
 
+.footer a{
+  margin-left:2%;
+  text-decoration: none;
+  color:white;
+}
+
+.footer form{
+  font-family: 'Bitter', serif;
+  text-align: right;
+  position: relative;
+}
+.footer a:hover {
+  color: #9fc131;
 }
 /*-------------------------------------Contact Me-------------------------------*/
 form{
@@ -155,18 +201,17 @@ form{
     height:auto;
   }
   .contenttext{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: left;
-    justify-content: left;
-  }
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: left;
+      justify-content: left;
+    }
 
-  .contenttext label{
-    display: block;
-    text-align: center;
-  }
-
+    .contenttext label{
+      display: block;
+      text-align: center;
+    }
   }
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 900px) {
@@ -179,13 +224,13 @@ form{
 
   .header{
     display:grid;
-    grid-template-columns: 30% 20% auto;
+    grid-template-columns: 20% 20% 20% 20%;
     height:50px;
   }
 
   .topnav{
     width:100%; /*when it scales down, this controls logo placement*/
-    grid-template-columns: auto 60px;
+    grid-template-columns: 100%;
     position:absolute;
     right:0px;
   }
@@ -197,36 +242,23 @@ form{
     display: none;
   }*/
 
-
-  .topnav a.icon {
-    display:block;
-    padding:13px 10px 10px 10px;
-    margin:0px;
-    position: absolute;
-
-  }
   .topnav.responsive {
     grid-template-columns: auto;
     opacity:.8;
   }
-  .topnav.responsive.icon {
 
-  }
   .topnav.responsive a {
     display: block;
   }
   .responsive .link{
 
   }
-
   .contactcontent{
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    justify-content: center;
-  }
-
-
+   margin-left: auto;
+   margin-right: auto;
+   align-items: center;
+   justify-content: center;
+ }
 }
 /*-------------------------------------desktop responsive-------------------------------*/
 @media screen and (min-width: 901px) {
@@ -234,14 +266,9 @@ form{
     display:none;
   }
   .topnav{
-    grid-template-columns: 18% 18% 18% 18% auto;
+    grid-template-columns: 50% 18% 18% 18% auto;
     }
   .topnav a{
     margin: 5px 0;
     }
-  .topnav a:not(:first-child){
-    }
-  .topnav a.icon {
-    display:none;
-  }
 }
