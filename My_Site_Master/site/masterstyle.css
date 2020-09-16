@@ -1,5 +1,11 @@
 /*-------------general---------------------------------------------------------------------*/
-html{
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 body{
@@ -46,6 +52,45 @@ background-color: white;
   width:20%;
   height:50%;
   margin-left:15%;
+}
+
+/*-------------------------------About Me---------------------------------------*/
+.aboutcontainer{
+  display: flex;
+  padding-bottom: 5%
+}
+.photos{
+  display: flex;
+  margin: 3%;
+}
+
+.photos p{
+  width: 40%;
+}
+
+.Courtney1{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.Gabe2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.bottomp{
+  display: flex;
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.kevaun{
+  font-size: .75em;
+  text-align: right;
 }
 /*-------------------------------------Body-------------------------------*/
 
