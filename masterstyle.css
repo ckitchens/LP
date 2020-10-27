@@ -1,0 +1,286 @@
+/*-------------general---------------------------------------------------------------------*/
+html{
+}
+
+body{
+font-family: 'Bitter', serif;
+font-family: 'Open Sans', sans-serif;
+background-color: white;
+}
+
+.content{
+  width:auto;
+  margin:20px 20px 20px 80px; /*left one is left margin*/
+}
+
+/*-------------------------------Navigation---------------------------------------*/
+.header{
+  font-family: 'Open Sans', sans-serif;
+  background-color: #363E50;
+  width:100%;
+}
+
+.topnav{
+  font-family: 'Open Sans', sans-serif;
+  background-color:transparent;
+  width: 100%;
+  display:grid;
+  background-color:white;
+  align-items: center;
+
+}
+.topnav a{
+  font-family: 'Open Sans', sans-serif;
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  color:#363E50;
+  padding:10px;
+}
+.topnav a:hover {
+  color: #9fc131;
+}
+
+.topnav a img{
+  width:20%;
+  height:50%;
+  align-items: center;
+}
+/*-------------------------------------Body-------------------------------*/
+
+.container{
+  width:84%;
+  height:100%;
+  position:relative;
+  margin-top:15%;
+  left:10%;
+  color:#363E50;
+
+}
+.hello{
+  font-family: 'Bitter', serif;
+  position:absolute;
+  font-size: 60px;
+  top:-4%;
+  left:18%;
+}
+
+.our{
+  font-family: 'Bitter', serif;
+  position:absolute;
+  font-size: 60px;
+  top:28%;
+  left:49%;
+}
+
+.intro{
+  font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  font-size:20px;
+  top:15%;
+  left:20%;
+}
+.boxes{
+  margin-left: 15%;
+  margin-bottom: 30%
+
+}
+/*--------------------Main Middle--------------------------------------*/
+.mainlinks{
+  display:flex;
+  background-color: #363E50;
+  height:200px;
+  justify-content: space-evenly;
+
+}
+/*-------------------------------------Form-------------------------------*/
+
+.contacttext{
+  margin-top: 10%;
+  margin-bottom: 2%;
+  font-family: 'Bitter', serif;
+  text-align: center;
+  color: black;
+}
+
+.contacttext p{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3{
+  font-family: 'Bitter', serif;
+}
+
+.container{
+    display: flex;
+
+    justify-content: right;
+    align-items: right;
+}
+.contactcontent{
+  display: flex;
+  align-items: right;
+  justify-content: ;
+  color: black;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.contactcontent ul{
+  list-style: none;
+}
+
+.contactcontent label{
+  font-family: 'Open Sans', sans-serif;
+  margin-left: auto;
+  display: inline-block;
+  width: 150px;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+.messagetext{
+  text-align: center;
+}
+
+textarea {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input{
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+}
+
+/*-------------------------------------Footer-------------------------------*/
+.footer {
+  position:sticky;
+  width: 100%;
+  display:grid;
+  background-color: #363E50;
+  color: white;
+  bottom: 0;
+ }
+
+.footer h1{
+  font-family: 'Bitter', serif;
+  text-align: left;
+  font-size: 18px;
+  display:grid;
+  margin:20px;
+  color:#9fc131;
+}
+
+.footer p{
+  font-size: 10px;
+}
+
+.footer a{
+  margin-left:2%;
+  text-decoration: none;
+  color:white;
+}
+
+.footer form{
+  font-family: 'Bitter', serif;
+  text-align: right;
+  position: relative;
+}
+.footer a:hover {
+  color: #9fc131;
+}
+.footer button{
+  border:#9fc131;
+  background-color: #9fc131;
+  color: white;
+}
+/*-------------------------------------Contact Me-------------------------------*/
+form{
+
+}
+.message{
+  width:100px;
+}
+
+
+/*-------------------------------------mobile responsive-------------------------------*/
+
+@media screen and (max-width: 600px) {
+  img{
+    max-width:100%;
+    height:auto;
+  }
+  .contenttext{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      align-items: left;
+      justify-content: left;
+    }
+
+    .contenttext label{
+      display: block;
+      text-align: center;
+    }
+  }
+/*-------------------------------------tablet responsive-------------------------------*/
+@media screen and (max-width: 900px) {
+  .desktop{
+    display:none;
+  }
+  .row {
+      grid-template-columns: auto ;
+  }
+
+  .header{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    height:50px;
+  }
+
+  .topnav{
+    width:100%; /*when it scales down, this controls logo placement*/
+    grid-template-columns: 100%;
+    position:absolute;
+    right:0px;
+  }
+  .topnav a{
+
+  }
+
+/*  .topnav a:not(.active) {
+    display: none;
+  }*/
+
+  .topnav.responsive {
+    grid-template-columns: auto;
+    opacity:.8;
+  }
+
+  .topnav.responsive a {
+    display: block;
+  }
+  .responsive .link{
+
+  }
+  .contactcontent{
+   margin-left: auto;
+   margin-right: auto;
+   align-items: center;
+   justify-content: center;
+ }
+}
+/*-------------------------------------desktop responsive-------------------------------*/
+@media screen and (min-width: 901px) {
+  .mobile{
+    display:none;
+  }
+  .topnav{
+    grid-template-columns: 18% 18% 25% 18% 18% auto;
+    }
+  .topnav a{
+    margin: 5px 0;
+    }
+}
