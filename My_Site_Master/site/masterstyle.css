@@ -1,15 +1,8 @@
 /*-------------general---------------------------------------------------------------------*/
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
+html{
 }
 
 body{
-margin:0px;
 font-family: 'Bitter', serif;
 font-family: 'Open Sans', sans-serif;
 background-color: white;
@@ -25,7 +18,6 @@ background-color: white;
   font-family: 'Open Sans', sans-serif;
   background-color: #363E50;
   width:100%;
-  top:0px;
 }
 
 .topnav{
@@ -33,15 +25,16 @@ background-color: white;
   background-color:transparent;
   width: 100%;
   display:grid;
-  background-color: #363E50;
+  background-color:white;
   align-items: center;
+
 }
 .topnav a{
   font-family: 'Open Sans', sans-serif;
   display: block;
   text-decoration: none;
   font-size: 17px;
-  color:white;
+  color:#363E50;
   padding:10px;
 }
 .topnav a:hover {
@@ -51,46 +44,7 @@ background-color: white;
 .topnav a img{
   width:20%;
   height:50%;
-  margin-left:15%;
-}
-
-/*-------------------------------About Me---------------------------------------*/
-.aboutcontainer{
-  display: flex;
-  padding-bottom: 5%
-}
-.photos{
-  display: flex;
-  margin: 3%;
-}
-
-.photos p{
-  width: 40%;
-}
-
-.Courtney1{
-  display: flex;
-  justify-content: center;
-  text-align: center;
   align-items: center;
-}
-
-.Gabe2{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.bottomp{
-  display: flex;
-  width: 60%;
-  margin: auto;
-  text-align: center;
-}
-.kevaun{
-  font-size: .75em;
-  text-align: right;
 }
 /*-------------------------------------Body-------------------------------*/
 
@@ -131,7 +85,14 @@ background-color: white;
   margin-bottom: 30%
 
 }
+/*--------------------Main Middle--------------------------------------*/
+.mainlinks{
+  display:flex;
+  background-color: #363E50;
+  height:200px;
+  justify-content: space-evenly;
 
+}
 /*-------------------------------------Form-------------------------------*/
 
 .contacttext{
@@ -209,6 +170,7 @@ input{
   font-size: 18px;
   display:grid;
   margin:20px;
+  color:#9fc131;
 }
 
 .footer p{
@@ -228,6 +190,11 @@ input{
 }
 .footer a:hover {
   color: #9fc131;
+}
+.footer button{
+  border:#9fc131;
+  background-color: #9fc131;
+  color: white;
 }
 /*-------------------------------------Contact Me-------------------------------*/
 form{
@@ -269,7 +236,7 @@ form{
 
   .header{
     display:grid;
-    grid-template-columns: 20% 20% 20% 20%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     height:50px;
   }
 
@@ -311,7 +278,7 @@ form{
     display:none;
   }
   .topnav{
-    grid-template-columns: 50% 18% 18% 18% auto;
+    grid-template-columns: 18% 18% 25% 18% 18% auto;
     }
   .topnav a{
     margin: 5px 0;
