@@ -10,14 +10,14 @@ background-color: white;
 
 .content{
   width:auto;
-  margin:20px 20px 20px 80px; /*left one is left margin*/
+  margin:20px 70px 20px 70px; /*left one is left margin*/
 }
 
 /*-------------------------------Navigation---------------------------------------*/
 .header{
   font-family: 'Open Sans', sans-serif;
-  background-color: #363E50;
   width:100%;
+  margin-top:2%;
 }
 
 .topnav{
@@ -26,7 +26,8 @@ background-color: white;
   width: 100%;
   display:grid;
   background-color:white;
-  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
 
 }
 .topnav a{
@@ -82,10 +83,18 @@ background-color: white;
 }
 .boxes{
   margin-left: 15%;
-  margin-bottom: 30%
+  margin-bottom: 30%;
 
 }
 /*--------------------Main Middle--------------------------------------*/
+.mainImage{
+  background-image:url("images/screen.png") ;
+  height:50%;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .mainlinks{
   display:flex;
   background-color: #363E50;
@@ -113,7 +122,6 @@ h3{
 
 .container{
     display: flex;
-
     justify-content: right;
     align-items: right;
 }
@@ -154,29 +162,77 @@ input{
       border-radius: 5px;
 }
 
+/*-------------------------------------Banner-------------------------------*/
+.banner{
+  width:100%;
+  height:20%;
+  background-color:#363E50;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+}
+.bannerText{
+  text-align: center;
+  position:absolute;
+  top:40%;
+  left:31%;
+  color:white;
+}
+
 /*-------------------------------------Footer-------------------------------*/
+
 .footer {
-  position:sticky;
   width: 100%;
-  display:grid;
   background-color: #363E50;
   color: white;
-  bottom: 0;
+  height:400px;
  }
-
+.footer-content{
+  border-top:1px solid white;
+  height:350px;
+  display:flex;
+}
+.footer-section{
+  padding:15px 20px;
+  margin-left: 4%;
+}
+.footer .footer-content .links h1{
+}
+.footer .footer-content .links ul a{
+  display: block;
+  margin-bottom:10px;
+  margin-left: 10px;
+  list-style-type: none;
+}
+.footer li{
+  list-style-type: none;
+  margin-left: 25px;
+}
 .footer h1{
   font-family: 'Bitter', serif;
   text-align: left;
   font-size: 18px;
-  display:grid;
   margin:20px;
   color:#9fc131;
 }
-
+.footer h2{
+  font-family: 'Bitter', serif;
+  margin-top:8%;
+  margin-bottom:2%;
+  font-size: 15px;
+}
+.footer .contact h1{
+  margin-bottom:0;
+}
 .footer p{
   font-size: 10px;
+  margin:20px;
+  margin-top:0;
 }
-
+.text-input{
+  width:300px;
+}
 .footer a{
   margin-left:2%;
   text-decoration: none;
@@ -185,9 +241,9 @@ input{
 
 .footer form{
   font-family: 'Bitter', serif;
-  text-align: right;
   position: relative;
 }
+
 .footer a:hover {
   color: #9fc131;
 }
@@ -195,6 +251,17 @@ input{
   border:#9fc131;
   background-color: #9fc131;
   color: white;
+  margin-top: 15px;
+}
+
+.footer hr{
+  width:80%;
+  margin-top:0;
+}
+.footer .icons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*-------------------------------------Contact Me-------------------------------*/
 form{
