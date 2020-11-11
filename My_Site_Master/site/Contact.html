@@ -14,17 +14,27 @@
 
   <div class="header">
     <div class="topnav" id="myTopnav">
-      <a href="index.html">
-        <img src= "images/link.png" alt="logo">
-      </a>
       <a href="Contact.html" class="link">Consultation</a>
-      <a href="MW.html" class="link">Portfolio</a>
+      <a href="Portfolio.html" class="link">Portfolio</a>
+      <a href="index.html">
+        <img src= "images/logoDemo.jpg" alt="logo">
+      </a>
+
+      <a href="Services.html" class="link">Services</a>
       <a href="AboutMe.html" class="link">About Us</a>
     </div>
-  </div>
 
+    <div class="bannercontainer">
+      <img src="/images/banner.png" alt="">
+
+      <div class="centertext">
+        <h1>Lets get in touch.</h1>
+      </div>
+
+    </div>
   <div class="contacttext">
-      <h3>Lets get in touch</h3>
+      <br>
+      <br>
       <br>
       <p>Our job is to bring your ideas to life, if you've got an idea in mind we would love to work with you!<br>
           Please fill out the form below to let us know what you need and we will get in contact with you.</p>
@@ -35,32 +45,34 @@
     <div class="containerbox">
       <div class="contactcontent">
 
-            <form action="/" target="" method="post">
+            <form id="contact-form" method="post" action="contact-form-handler.php">
 
               <ul class = "flexouter">
 
                 <li>
                   <label for="fname">First Name:</label>
-                  <input type="text" id="fname" placeholder="First Name"><br>
+                  <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required><br>
                 </li>
 
                 <li>
                   <label for="lname">Last Name:</label>
-                  <input type="text" id="lname" placeholder="Last Name"><br>
+                  <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required><br>
                 </li>
 
                 <li>
                   <label for="email">Email Address:</label>
-                  <input type="email" id="email" placeholder ="Email Address"><br>
+                  <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required><br>
                 </li>
 
                 <li>
                   <label for="phone number">Phone Number:</label>
-                  <input type="phone" id="phoneNumber" placeholder="Phone number"><br>
+                  <input type="number" name="phoneNumber" id="phoneNumber" class="form-control" placeholder="Phone number" required><br>
                 </li>
                   <label for="mess">Project Details:</label> <br>
-                  <textarea name="mess" id="message" rows="8" cols="50"></textarea>
+                  <textarea name="mess" name="message" id="message" class="form-control" rows="8" cols="50" required></textarea>
                 <li>
+
+                  <input type="submit"  name="button" class="form-control submit" value="Submit">
 
                 </li>
 

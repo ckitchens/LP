@@ -105,7 +105,7 @@ background-color: white;
 /*-------------------------------------Form-------------------------------*/
 
 .contacttext{
-  margin-top: 10%;
+  margin-top: 0%;
   margin-bottom: 2%;
   font-family: 'Bitter', serif;
   text-align: center;
@@ -128,7 +128,7 @@ h3{
 .contactcontent{
   display: flex;
   align-items: right;
-  justify-content: ;
+  justify-content: center;
   color: black;
   margin-left: 20%;
   margin-right: 20%;
@@ -162,6 +162,110 @@ input{
       border-radius: 5px;
 }
 
+/*-------------------------------About Me---------------------------------------*/
+.bottomp{
+  display: flex;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.aboutp1{
+  display: inline-flex;
+  text-align: right;
+  width: 30%;
+  margin-right: 15px;
+}
+
+.aboutp2{
+  display: inline-flex;
+  text-align: left;
+  width: 30%;
+  margin-left: 15px;
+}
+
+.aboutcontainer{
+  display: flex;
+
+}
+
+.photos{
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.photos img{
+  width: 40%;
+}
+
+.Gabe2{
+  display: inline-flex;
+  flex-direction: row-reverse;
+  width: 50%;
+}
+
+.GabeText{
+  display: block;
+  padding-top: 15%;
+  width: 35%;
+  align-items: center;
+  text-align: center;
+}
+
+.Gabe2 img{
+  width: 40%;
+}
+
+.Courtney1{
+  display: inline-flex;
+  width: 50%;
+  width: 50%;
+}
+
+.courtneytext{
+  display: block;
+  padding-top: 15%;
+  width: 35%;
+  text-align: center;
+  align-items: center;
+}
+
+.courtneytext p{
+}
+.bottomp h1{
+  font-size: 50px;
+}
+
+.bottomp p{
+  font-size: 25px;
+}
+.kevaun{
+  font-size: .75em;
+  text-align: right;
+}
+.bannercontainer{
+  position: relative;
+  text-align: center;
+}
+.bannercontainer img{
+  width: 100%;
+  height: 150px;
+}
+
+.centertext{
+  position:absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.MTF h3{
+text-align: center;
+border: 3px black;
+}
 /*-------------------------------------Banner-------------------------------*/
 .banner{
   width:100%;
@@ -275,10 +379,7 @@ form{
 /*-------------------------------------mobile responsive-------------------------------*/
 
 @media screen and (max-width: 600px) {
-  img{
-    max-width:100%;
-    height:auto;
-  }
+
   .contenttext{
       display: block;
       margin-left: auto;
@@ -291,7 +392,69 @@ form{
       display: block;
       text-align: center;
     }
+
+    .bannercontainer{
+      width: 100%;
+    }
+
+    .aboutp1{
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      padding-bottom: 2%;
+    }
+
+    .aboutp1 p{
+      font-size: 20px;
+    }
+
+    .aboutp2 p{
+      font-size: 20px;
+    }
+
+    .aboutp2{
+      width: 80%;
+      text-align: center;
+      margin: auto;
+    }
+
+    .aboutcontainer{
+      display: flex;
+    }
+
+    .photos{
+      display: block;
+    }
+
+    .photos img{
+      width: 40%;
+    }
+
+    .Gabe2{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    .GabeText{
+      padding-top: 5%;
+      display: block;
+      width: 50%;
+    }
+
+    .Courtney1{
+      display: flex;
+      width: 100%;
+    }
+
+    .courtneytext{
+      padding-top: 5%;
+      display: block;
+      width: 50%;
+    }
   }
+
+
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 900px) {
   .desktop{
