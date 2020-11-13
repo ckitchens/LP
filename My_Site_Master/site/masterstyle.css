@@ -266,6 +266,69 @@ input{
 text-align: center;
 border: 3px black;
 }
+/*-------------------------------------Services-------------------------------*/
+.ServDesc{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  font-size: 23px;
+}
+.servicedots{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 2%;
+}
+
+.first4dots{
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.servicedots li{
+  text-align: left;
+}
+
+.second4dots{
+  padding-top: 2%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+}
+
+.service1dot{
+  width: 15%;
+}
+
+.service2dot{
+  width: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.service3dot{
+  width: 15%;
+}
+
+.service4dot{
+  width: 15%;
+}
+
+.service5dot{
+  width: 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.service6dot{
+  width: 15%;
+}
+
 /*-------------------------------------Banner-------------------------------*/
 .banner{
   width:100%;
@@ -367,6 +430,106 @@ border: 3px black;
   align-items: center;
   justify-content: center;
 }
+/*-------------------------------------Portfolio-------------------------------*/
+.clientlist{
+  display: flex;
+  flex-direction: column;
+
+  color: #363E50;
+}
+
+.first4clients{
+  display: flex;
+  margin: auto;
+}
+
+.second4clients{
+  display: flex;
+  margin: auto;
+}
+
+.third4clients{
+  display: flex;
+  margin: auto;
+}
+.fourth4clients{
+  display: flex;
+  margin: auto;
+}
+
+
+.client1{
+  position: relative;
+}
+
+.client2{
+  position: relative;
+}
+
+.client3{
+  position: relative;
+}
+
+.client4{
+  position: relative;
+}
+
+.client5{
+  position: relative;
+}
+
+.client6{
+  position: relative;
+}
+
+.client7{
+  position: relative;
+}
+
+.client8{
+  position: relative;
+}
+
+.client9{
+  position: relative;
+}
+
+.client10{
+  position: relative;
+}
+
+.client11{
+  position: relative;
+}
+
+.client12{
+  position: relative;
+}
+
+.client13{
+  position: relative;
+}
+
+.client14{
+  position: relative;
+}
+
+.client15{
+  position: relative;
+}
+
+.client16{
+  position: relative;
+}
+.soontext{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
 /*-------------------------------------Contact Me-------------------------------*/
 form{
 
@@ -452,9 +615,66 @@ form{
       display: block;
       width: 50%;
     }
+
+
+
+  .servicedots{
+    display: flex;
   }
 
+  .first4dots{
+    display: block;
+  }
 
+  .second4dots{
+    display: block;
+  }
+
+  .service1dot{
+    width: 100%;
+  }
+  .service2dot{
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+  }
+
+  .service3dot{
+    padding-left: 0%;
+    width: 100%;
+  }
+
+  .service4dot{
+    width: 100%;
+  }
+
+  .service5dot{
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+  }
+
+  .service6dot{
+    width: 100%;
+  }
+
+.first4clients{
+  flex-direction: column;
+}
+
+.second4clients{
+  flex-direction: column;
+}
+
+.third4clients{
+  flex-direction: column;
+}
+
+.fourth4clients{
+  flex-direction: column;
+}
+
+}
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 900px) {
   .desktop{
