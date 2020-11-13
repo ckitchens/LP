@@ -8,10 +8,13 @@ body{
 
 }
 body.home{
-  background: url()
+  background-image: url("images/Bannerhome2.png");
+  background-repeat:no-repeat;
+  width:100%;
+
 }
 body.services{
-  background: url(images/Bannerback.png)
+  background: url(images/Bannerback.png);
 }
 .content{
   width:auto;
@@ -78,6 +81,8 @@ body.services{
 
 .mainlinks{
   display:flex;
+  margin-top:35%;
+  padding:2%;
   background-color: #363E50;
   height:200px;
   justify-content: space-evenly;
