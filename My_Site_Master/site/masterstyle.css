@@ -11,10 +11,12 @@ body.home{
   background-image: url("images/Bannerhome2.png");
   background-repeat:no-repeat;
   width:100%;
+  background-size: cover;
 
 }
 body.services{
   background: url(images/Bannerback.png);
+  background-size: cover;
 }
 .content{
   width:auto;
@@ -26,13 +28,13 @@ body.services{
 	width: 100%;
   display:flex;
   justify-content: center;
+  overflow:hidden;
 }
-
 #nav-list{
   list-style: none;
    list-style-type: none;
    color:#363E50;
-   padding:40px;
+   margin-top:3%;
 }
 
 #nav-list li{
@@ -57,8 +59,12 @@ body.services{
 .navigation a:hover {
   color: #9fc131;
 }
-
-
+.navigation .icon{
+  display:none;
+}
+.toggle{
+  display:none! important;
+}
 /*-------------------------------------Body-------------------------------*/
 
 .container{
@@ -529,7 +535,9 @@ form{
 /*-------------------------------------mobile responsive-------------------------------*/
 
 @media screen and (max-width: 600px) {
-
+.navigation{
+  display:none;
+}
   .contenttext{
       display: block;
       margin-left: auto;
@@ -670,38 +678,11 @@ form{
   .row {
       grid-template-columns: auto ;
   }
-
-  .header{
-    display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    height:50px;
+  .navigation{
+    justify-content: center;
   }
 
-  .topnav{
-    width:100%; /*when it scales down, this controls logo placement*/
-    grid-template-columns: 100%;
-    position:absolute;
-    right:0px;
-  }
-  .topnav a{
 
-  }
-
-/*  .topnav a:not(.active) {
-    display: none;
-  }*/
-
-  .topnav.responsive {
-    grid-template-columns: auto;
-    opacity:.8;
-  }
-
-  .topnav.responsive a {
-    display: block;
-  }
-  .responsive .link{
-
-  }
   .contactcontent{
    margin-left: auto;
    margin-right: auto;
@@ -714,10 +695,3 @@ form{
   .mobile{
     display:none;
   }
-  .topnav{
-    grid-template-columns: 18% 18% 25% 18% 18% auto;
-    }
-  .topnav a{
-    margin: 5px 0;
-    }
-}
