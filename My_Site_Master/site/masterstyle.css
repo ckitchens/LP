@@ -63,7 +63,7 @@ body.services{
   display:none;
 }
 .toggle{
-  display:none! important;
+display:none;
 }
 /*-------------------------------------Body-------------------------------*/
 
@@ -394,7 +394,6 @@ border: 3px black;
   width:250px;
 }
 .footer a{
-  margin-left:2%;
   text-decoration: none;
   color:white;
 }
@@ -535,9 +534,12 @@ form{
 /*-------------------------------------mobile responsive-------------------------------*/
 
 @media screen and (max-width: 600px) {
-.navigation{
-  display:none;
-}
+.navigationa:not(:first-child){display:none;}
+.navigation a.toggle{
+  float:right;
+  display:block;
+  }
+
   .contenttext{
       display: block;
       margin-left: auto;
@@ -679,7 +681,7 @@ form{
       grid-template-columns: auto ;
   }
   .navigation{
-    justify-content: center;
+
   }
 
 
