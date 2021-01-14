@@ -4,83 +4,117 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>My Site - My Work</title>
   <link rel ="stylesheet" href= "resetStandard1.css">
-  <link rel ="stylesheet" href= "masterstyle.css">
+  <link rel ="stylesheet" href= "ContactV2.css">
+  <link rel ="stylesheet" href= "styles35.css">
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Open+Sans&display=swap" rel="stylesheet">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HomePage</title>
 
 </head>
-<body class="services">
+<body style = "background-color: #363E50">
 
-  <div class="navigation">
+  <nav>
+    <div class="logo-small"><a href="#">
+      <img class="logo-img" src="images/LinkPadFinalLogo2-01.png" alt="Logo" width="200px" height="200px"></a>
+    </div>
 
-    <ul id="nav-list">
-      <li><a href="Contact.html">Consultation</a></li>
-        <li><a href="Portfolio.html">Portfolio</a></li></ul>
-        <ul id="nav-list-img">
-          <li><a href="index.html">
-            <img class="logo-img" src="images/LinkPadFinalLogo2-01.png" alt="Logo" width="200" height="200"></li>
-          </a>
-        </ul>
-        <ul id="nav-list">
-        <li><a href="Services.html">Services</a></li>
-        <li><a href="AboutMe.html">About Us</a></li>
+    <ul class="nav-links">
+      <li><a href="Contact.html">Contact</a></li>
+      <li><a href="Portfolio.html">Portfolio</a></li>
+      <li class="logo"><a href="index.html">
+        <img class="logo-img" src="images/LinkPadFinalLogo2-01.png" alt="Logo" width="300px" height="300px"></a>
+      </li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="AboutMe.html">About Me</a></li>
     </ul>
 
-
- </div>
-
-    <div class="bannercontainer">
-      <div class="centertext">
-        <h1>Lets get in touch.</h1>
-      </div>
-
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
     </div>
+  </nav>
+
+  <div class="Chat">
+    <br>
+    <br>
+    <br>
+    <h1>Let's Chat.</h1>
+    <hr>
+    <br>
+  </div>
+
   <div class="contacttext">
-      <br>
-      <br>
-      <br>
-      <p>Our job is to bring your ideas to life, if you've got an idea in mind we would love to work with you!<br>
-          Please fill out the form below to let us know what you need and we will get in contact with you.</p>
+      <p>Feel free to send us your information, questions,and ideas. We would love to get <br>in touch with you and take that first step towards growing your company.</p>
       <br>
       <br>
     </div>
+
+    <div class="contacttextmobile">
+        <p>Feel free to send us your information, questions,and ideas. We would love to get in touch with you and take that first step towards growing your company.</p>
+        <br>
+        <br>
+      </div>
 
     <div class="containerbox">
       <div class="contactcontent">
 
-            <form id="contact-form" method="post" action="contact-form-handler.php">
+            <form id="contact-form" method="post" action="contact-form-handler.php" novalidate>
 
-              <ul class = "flexouter">
+              <div class="names">
 
-                <li>
-                  <label for="fname">First Name:</label>
-                  <input type="text" name="fname" id="fname" class="form-control" placeholder="First Name" required><br>
-                </li>
+                <div class="firstname">
+                  <input size="41" type="text" name="fname" id="fname" class="form-control" placeholder="   First Name" required>
+                </div>
 
-                <li>
-                  <label for="lname">Last Name:</label>
-                  <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required><br>
-                </li>
+                <div class="firstnamemobile">
+                  <input size="50" type="text" name="fnamem" id="fnamem" class="form-control" placeholder="   First Name" required>
+                </div>
 
-                <li>
-                  <label for="email">Email Address:</label>
-                  <input type="email" name="email" id="email" class="form-control" placeholder="Email Address" required><br>
-                </li>
+                <div class="lastname">
+                  <label for="lname"></label>
+                  <input size="41" type="text" name="lname" id="lname" class="form-control" placeholder="   Last Name" required>
+                </div>
 
-                <li>
-                  <label for="phone number">Phone Number:</label>
-                  <input type="number" name="phoneNumber" id="phoneNumber" class="form-control" placeholder="Phone number" required><br>
-                </li>
-                  <label for="mess">Project Details:</label> <br>
-                  <textarea name="mess" name="message" id="message" class="form-control" rows="8" cols="50" required></textarea>
-                <li>
+                <div class="lastnamemobile">
+                  <label for="lname"></label>
+                  <input size="50" type="text" name="lnamem" id="lnamem" class="form-control" placeholder="   Last Name" required>
+                </div>
 
-                  <input type="submit"  name="button" class="form-control submit" value="Submit">
+              </div>
 
-                </li>
+              <div class="Email">
+                <label for="email"></label>
+                <input size="90" type="email" name="email" id="email" class="form-control" placeholder="   Email Address" required>
+              </div>
 
-              </ul>
+              <div class="Emailmobile">
+                <label for="email"></label>
+                <input size="50" type="email" name="emailm" id="emailm" class="form-control" placeholder="   Email Address" required>
+              </div>
+
+              <div class="message">
+                <label for="mess"></label> <br>
+                <textarea name="mess" id="mess" class="form-control" rows="8" cols="87" placeholder="   Project Details" required></textarea>
+              </div>
+
+              <div class="messagemobile">
+                <label for="mess"></label> <br>
+                <textarea name="messm"  id="messm" class="form-control" rows="8" cols="52" placeholder="   Project Details" required></textarea>
+              </div>
+
+              <div class="Submit">
+                <input type="submit"  name="button_1" class="form-control submit" value="Submit" style="width: 10%">
+              </div>
+
+              <div class="Submitmobile">
+                <input type="submit"  name="button_2" class="form-control submit" value="Submit">
+              </div>
+
+            </div>
+
+
+
             </form>
 
 
@@ -88,6 +122,7 @@
       </div>
 <br>
 <br>
+
 <div class="footer">
   <div class="footer-content">
 
@@ -96,7 +131,6 @@
       <img src="images/LinkPadLetterhead-GREEN-01.png" alt="MyLinkPad logo" height="200px">
     </a>
       <div class="contact">
-        <br>
         <h1>Contact Us</h1>
           <p>MyLinkPad@MyLinkPad.com</p>
       </div>
@@ -111,7 +145,7 @@
       <li>
         <a href="Services.html" class="link">Blog</a></li>
       <li>
-        <a href="MW.html" class="link">Portfolio</a></li>
+        <a href="Portfolio.html" class="link">Portfolio</a></li>
       </ul>
     </div>
       <div class="footer-section links">
@@ -120,7 +154,7 @@
             <li>
               <a href="" class="link">Hire Us</a></li>
             <li>
-              <a href="Services" class="link">Services</a></li>
+              <a href="Services.html" class="link">Services</a></li>
           </ul>
         </div>
       <div class="footer-section contact-form">
@@ -128,22 +162,29 @@
         <form action="/" target="" method="post">
           <input type="email" name="email" class="text-input" placeholder="Email....">
           <br>
+          <br>
           <button type="submit" form="form1" value="Submit">Submit</button>
         </form>
         </div>
     </div>
-    <hr>
-    <div class="icons">
-      <a href="###">
-        <img src= "images/insta.png" alt="Instagram link" width="30px" height="30px">
-      </a>
-      <a href="###">
-        <img src= "images/fb.png" alt="facebook link" width="30px" height="30px">
-      </a>
-      <a href="###">
-        <img src= "images/google.png" alt="facebook link" width="30px" height="26px">
-      </a>
-    </div>
   </div>
+<br>
+  <hr>
+  <div class="icons">
+    <a href="###">
+      <img src= "images/insta.png" alt="Instagram link" width="30px" height="30px">
+    </a>
+    <a href="###">
+      <img src= "images/fb.png" alt="facebook link" width="30px" height="30px">
+    </a>
+    <a href="###">
+      <img src= "images/google.png" alt="facebook link" width="30px" height="26px">
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+
+
+<script src="navigation.js"></script>
 </body>
 </html>
