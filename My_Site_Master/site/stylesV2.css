@@ -13,6 +13,11 @@ a{
   color:#363E50;;
   text-decoration: none;
 }
+.top{
+
+  background-color: #363E50;
+}
+
 h1{
   margin-bottom: 0;
   font-family:'Bitter';
@@ -27,7 +32,6 @@ h2{
 p{
   margin-top: 5px;
   font-family: sans-serif;
-  color:white
 }
 hr{
   text-align: center;
@@ -87,12 +91,72 @@ nav{
   width:100%;
   text-align: center;
 }
-.process{
-  text-align: center;
-}
-.processGroup{
-  display: flex;
+.middle {
+  background-color:white;
+  position: relative;
+  width:100%;
+  display:flex;
+  flex-wrap: wrap;
   justify-content: center;
+}
+.middle-content{
+  display:flex;
+  flex-wrap:wrap;
+  margin:3%;
+  justify-content: space-between;
+  width:90%;
+}
+.middle .middle-content .card ul a{
+  display:block;
+}
+.middle li{
+  list-style: none;
+}
+.card{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card:hover{
+  box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card p{
+  color:#363E50;
+  font-size:25px;
+  margin: 14%;
+}
+.card h2{
+  color:#9fc131;
+  font-size: 30px;
+  margin-bottom:0;
+}
+.card_link p{
+  margin-left:60%;
+  margin-bottom:10%;
+  color:#9fc131;
+  font-size:15px;
+}
+.showcase{
+  display:grid;
+  grid-template-columns: 40% 25% 15%;
+  justify-content: center;
+  margin-top:5%;
+  margin-left: 3%;
+  margin-bottom:10%;
+}
+
+.showcase-text h1{
+  font-size: 50px;
+  color:#9fc131;
+}
+.showcase-text p{
+  font-size:25px;
+  margin-left: 6%;
+  margin-top:5%;
 }
 .mainImage{
   display:flex;
@@ -101,10 +165,55 @@ nav{
   margin-top:2%;
 }
 .mainButtons{
-  display:flex;
-  justify-content: center;
-  padding-top: 40px;
+  justify-content: space-between;
   padding-bottom: 40px ;
+  align-items: right;
+}
+.process{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+  margin-bottom:5%;
+}
+.process-content{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%;
+    justify-content: center;
+}
+.process-content p{
+  margin-top:4%;
+  margin-left: 2%;
+  color:white;
+}
+.process h2{
+  margin-top:5%;
+  margin-bottom:5%;
+  font-size: 50px;
+  margin-left:40%;
+}
+.button{
+  border:none;
+  color: white;
+  padding:3%;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  font-size: 16px;
+  margin: 7% 30%;
+  transition-duration:0.4s;
+  cursor: pointer;
+}
+.button{
+  background: #363E50;
+  color: white;
+  border:3px solid #9fc131;;
+}
+.button1:hover{
+  background-color: #9fc131;;
+  color:white;
+  cursor: pointer;
+
 }
 
 /* ----------------------Footer---------------------------- */
@@ -161,10 +270,6 @@ nav{
   text-decoration: none;
   color:white;
 }
-.footer form{
-  font-family: 'Bitter', serif;
-  display:flex;
-}
 .footer a:hover {
   color: #9fc131;
 }
@@ -173,12 +278,6 @@ nav{
   background-color: #9fc131;
   color: white;
   margin-top: 15px;
-}
-.icons{
-  margin-top:1%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 
@@ -218,10 +317,6 @@ nav{
   position:absolute;
   top:0;
   }
-  .processGroup{
-    display:flex;
-    justify-content: center;
-  }
   .mainButtons{
     margin-top:5%;
     margin-bottom: 5%;
@@ -229,10 +324,16 @@ nav{
     flex-wrap:wrap;
     justify-content: center;
   }
-  .contact{
-    margin-right:30%;
+  .button{
+    margin-top:3%;
   }
-
+  .path19{
+    margin-bottom:8%;
+    margin-top:2%
+  }
+  .path18{
+    margin-bottom: 7%;
+  }
 
 }
 
@@ -240,7 +341,15 @@ nav{
 @media screen and (min-width:950px){
   .logo-small{
     display:none;
-
+  }
+  .card{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:30%;
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
   }
 
 }
