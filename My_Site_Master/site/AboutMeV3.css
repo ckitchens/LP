@@ -87,6 +87,11 @@ color: white;
 /*-------------------------------------mobile responsive-------------------------------*/
 
 @media screen and (max-width: 600px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
   .desktopimageG{
     display: none;
   }
@@ -153,6 +158,10 @@ color: white;
 
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 1024px) {
+
+  body{
+    overflow-x: hidden;
+  }
 
   .desktopimageG{
     display: none;

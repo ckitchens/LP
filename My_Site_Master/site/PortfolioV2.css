@@ -13,10 +13,16 @@
 /*-------------------------------------mobile responsive-------------------------------*/
 
 @media screen and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+  }
 
 }
 
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 1024px) {
+  body{
+    overflow-x: hidden;
+  }
 
 }

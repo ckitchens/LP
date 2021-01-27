@@ -137,6 +137,10 @@ hr{
 
 @media screen and (max-width: 600px) {
 
+  body{
+    overflow-x: hidden;
+  }
+
 .first3Services{
   align-items: center;
   display: flex;
@@ -177,6 +181,10 @@ hr{
 
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 1024px) {
+
+  body{
+    overflow-x: hidden;
+  }
 
   .first3Services{
     align-items: center;
