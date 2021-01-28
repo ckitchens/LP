@@ -4,7 +4,7 @@
   margin:0;
 }
 body{
-  background-color: #363E50;
+  background: linear-gradient(to bottom, #363E50 35%, #FFFFFF 35%);
   font-family:'Bitter', sans-serif;
   font-size:16px;
 
@@ -12,10 +12,6 @@ body{
 a{
   color:#363E50;;
   text-decoration: none;
-}
-.top{
-
-  background-color: #363E50;
 }
 
 h1{
@@ -91,8 +87,11 @@ nav{
   width:100%;
   text-align: center;
 }
+.background{
+  position: absolute;
+  width:100%;
+}
 .middle {
-  background-color:white;
   position: relative;
   width:100%;
   display:flex;
@@ -113,6 +112,7 @@ nav{
   list-style: none;
 }
 .card{
+  background-color:white;
   display:flex;
   flex-wrap:wrap;
   justify-content: center;
@@ -141,39 +141,49 @@ nav{
   font-size:15px;
 }
 .showcase{
-  display:grid;
-  grid-template-columns: 40% 25% 15%;
-  justify-content: center;
-  margin-top:5%;
-  margin-left: 3%;
   margin-bottom:10%;
+  display:flex;
+  flex-wrap: wrap;
+}
+.showcase h1{
+  font-size: 50px;
+  color:#363E50;
+  margin-top: 5%;
+  margin-left: 10%;
+  border-bottom: 5px solid #9fc131;
+  padding-right:5%;
+}
+.showcase-content{
+  display:flex;
+  flex-wrap:wrap;
+  margin-left:10%;
+  color:#363E50;
 }
 
-.showcase-text h1{
-  font-size: 50px;
-  color:#9fc131;
+.showcase-text{
+  display:flex;
+  flex-wrap:wrap;
+  margin-left:2%;
+  margin-right:4%;
+  color:#363E50;
 }
 .showcase-text p{
   font-size:25px;
   margin-left: 6%;
   margin-top:5%;
 }
+
 .mainImage{
   display:flex;
   justify-content: center;
   width:100%;
   margin-top:2%;
 }
-.mainButtons{
-  justify-content: space-between;
-  padding-bottom: 40px ;
-  align-items: right;
-}
 .process{
+  background-color:#363E50;
   display: flex;
   flex-wrap: wrap;
   width:100%;
-  margin-bottom:5%;
 }
 .process-content{
   display: flex;
@@ -207,7 +217,7 @@ nav{
 .button{
   background: #363E50;
   color: white;
-  border:3px solid #9fc131;;
+  border:3px solid #9fc131;
 }
 .button1:hover{
   background-color: #9fc131;;
@@ -218,6 +228,7 @@ nav{
 
 /* ----------------------Footer---------------------------- */
 .footer {
+  background-color: #363E50;
   color: white;
   width:100%;
   display:flex;
@@ -316,13 +327,6 @@ nav{
   .logo-small{
   position:absolute;
   top:0;
-  }
-  .mainButtons{
-    margin-top:5%;
-    margin-bottom: 5%;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
   }
   .button{
     margin-top:3%;
