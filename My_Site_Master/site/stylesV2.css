@@ -328,6 +328,13 @@ nav{
   position:absolute;
   top:0;
   }
+  .card{
+    margin:5%;
+  }
+  .process h2{
+    margin-left:20%;
+    margin-bottom:10%;
+  }
   .button{
     margin-top:3%;
   }
