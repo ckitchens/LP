@@ -189,7 +189,7 @@ nav{
   display: flex;
   flex-wrap: wrap;
   width:100%;
-    justify-content: center;
+  justify-content: center;
 }
 .process-content p{
   margin-top:4%;
@@ -201,6 +201,8 @@ nav{
   margin-bottom:5%;
   font-size: 50px;
   margin-left:40%;
+  border-bottom: 5px solid #9fc131;
+  padding-right:5%;
 }
 .button{
   border:none;
@@ -334,6 +336,10 @@ nav{
   .process h2{
     margin-left:20%;
     margin-bottom:10%;
+  }
+  .photography, .websites, .print{
+    margin-left: 20%;
+    margin-top:10%;
   }
   .button{
     margin-top:3%;
