@@ -1,0 +1,158 @@
+
+/*-------------------------------------Menu-------------------------------*/
+
+
+.WWD{
+  padding-top: 5%;
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/*
+.WWD hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-style: inset;
+  border-width: 3px;
+}
+*/
+.WWD p{
+  padding-top: 15px;
+}
+.allservices{
+  margin-left: 10%;
+  margin-right: 10%;
+  color: white;
+}
+.first3Services{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.first3Services li{
+  text-align: left;
+}
+.service1{
+  width: 15%;
+}
+
+.service2{
+  width: 15%;
+}
+
+.service3{
+  width: 15%;
+}
+.second3services{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  padding-bottom: 5%;
+}
+.second3services li{
+  text-align: left;
+}
+.service4{
+  width: 15%;
+}
+.service5{
+  width: 15%;
+}
+.service6{
+  width: 15%;
+}
+
+/*-------------------------------------mobile responsive-------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+.first3Services{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.service1{
+  width: 70%;
+  padding-bottom: 5%;
+
+}
+.service2{
+  width: 70%;
+  padding-bottom: 5%;
+}
+.service3{
+  width: 70%;
+  padding-bottom: 5%;
+}
+
+.second3services{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.service4{
+  width: 70%;
+  padding-bottom: 5%;
+}
+.service5{
+  width: 70%;
+  padding-bottom: 5%;
+}
+.service6{
+  width: 70%;
+  padding-bottom: 5%;
+  }
+}
+
+/*-------------------------------------tablet responsive-------------------------------*/
+@media screen and (max-width: 1024px) {
+
+  .first3Services{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .service1{
+    width: 70%;
+    padding-bottom: 5%;
+
+  }
+  .service2{
+    width: 70%;
+    padding-bottom: 5%;
+  }
+  .service3{
+    width: 70%;
+    padding-bottom: 5%;
+  }
+
+  .second3services{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .service4{
+    width: 70%;
+    padding-bottom: 5%;
+  }
+  .service5{
+    width: 70%;
+    padding-bottom: 5%;
+  }
+  .service6{
+    width: 70%;
+    padding-bottom: 5%;
+    }
+
+
+}

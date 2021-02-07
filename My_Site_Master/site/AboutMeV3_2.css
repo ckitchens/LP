@@ -1,0 +1,211 @@
+.AboutTitle{
+  padding-top: 4%;
+  text-align: center;
+  color: white;
+}
+
+/*
+.AboutTitle hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-style: inset;
+  border-width: 3px;
+}
+*/
+.Paracontainer{
+  padding-top: 15px;
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  color: white;
+}
+
+.mobileimageG{
+  display: none;
+}
+.MTF{
+  text-align: center;
+  color: #9fc131;
+}
+
+.leftp{
+  text-align: right;
+  padding-right: 15px;
+}
+.rightp{
+  padding-left: 15px;
+  text-align: left;
+}
+.GAC{
+  justify-content: center;
+  display: flex;
+  color: white;
+}
+.Gabe{
+  display: flex;
+  width: 40%;
+  flex-direction: row-reverse;
+}
+
+.GabeText{
+  padding-top: 25%;
+  text-align: right;
+}
+
+.GabeText h4{
+  color: #9fc131;
+}
+
+.Courtney{
+  display: flex;
+  width: 40%;
+}
+
+.CourtneyText{
+  padding-top: 1%;
+}
+
+.CourtneyText h4{
+  color: #9fc131;
+}
+
+.Enough{
+padding-bottom: 4%;
+text-align: center;
+width: 30%;
+margin: auto;
+color: white;
+}
+
+.mobileimageC{
+  display: none;
+}
+
+/*-------------------------------------mobile responsive-------------------------------*/
+
+@media screen and (max-width: 600px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .desktopimageG{
+    display: none;
+  }
+  .mobileimageG{
+    display: flex;
+  }
+
+  .desktopimageC{
+    display: none;
+  }
+
+  .mobileimageC{
+    display: flex;
+  }
+
+  .GAC{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Gabe{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .GabeText{
+    width: 50%;
+    text-align: center;
+    padding-top: 0%;
+  }
+
+  .Courtney{
+    width: 100%;
+    justify-content: center;
+  }
+  .CourtneyText{
+    width: 50%;
+    text-align: center;
+    padding-top: 0%;
+  }
+
+  .Paracontainer{
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .leftp{
+    text-align: left;
+    padding-right: 0;
+    padding-bottom: 15px;
+  }
+
+  .rightp{
+    padding-left: 0;
+  }
+
+  .Enough{
+    width: 80%;
+  }
+
+}
+
+/*-------------------------------------tablet responsive-------------------------------*/
+@media screen and (max-width: 1024px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .desktopimageG{
+    display: none;
+  }
+  .mobileimageG{
+    display: flex;
+  }
+
+  .desktopimageC{
+    display: none;
+  }
+
+  .mobileimageC{
+    display: flex;
+  }
+
+  .GAC{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Gabe{
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .GabeText{
+    width: 50%;
+    text-align: center;
+    padding-top: 5%;
+  }
+
+  .Courtney{
+    width: 100%;
+    justify-content: center;
+  }
+  .CourtneyText{
+    width: 50%;
+    text-align: center;
+    padding-top: 2%;
+  }
+
+  .Enough{
+    width: 80%;
+  }
+}
