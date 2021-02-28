@@ -1,71 +1,9 @@
-* {
-  box-sizing:border-box;
-  padding:0;
-  margin:0;
-}
+
 body{
   background: linear-gradient(to bottom, #363E50 35%, #FFFFFF 35%);
   font-family:'Bitter', sans-serif;
   font-size:16px;
 }
-a{
-  color:#363E50;;
-  text-decoration: none;
-
-}
-header{
-  background: white;
-  text-align: center;
-  width:100%;
-}
-h1{
-  margin-bottom: 0;
-  font-family:'Bitter';
-  color:white;
-}
-h2{
-  font-size: 40px;
-  margin-top:8%;
-  font-family:'Bitter';
-  color:white;
-}
-p{
-  margin-top: 5px;
-  font-family: sans-serif;
-}
-hr{
-  text-align: center;
-  margin:0 auto;
-  width:40%;
-
-}
-/* navigation styles */
-nav{
-  display:flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color:white;
-  padding: 0 15px;
-}
-nav a{
-  position:relative;
-}
-
-.nav-links a{
-  width:100%;
-  color:#363E50;
-  text-decoration: none;
-  letter-spacing: none;
-  }
-
-.logo{
-  display:flex;
-  position:relative;
-  justify-content: center;
-  margin-top:-7%;
-}
-
-
 /*-------------------------------------Welcome Message-------------------------------*/
 .welcome{
   margin-top:5%;
@@ -210,9 +148,13 @@ nav a{
   background-color: #9fc131;;
   color:white;
   cursor: pointer;
-
 }
-
+.Caroucontainer{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+}
 /* ----------------------Footer---------------------------- */
 .footer {
   background-color: #363E50;
