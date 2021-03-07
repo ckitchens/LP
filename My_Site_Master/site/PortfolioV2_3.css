@@ -1,0 +1,36 @@
+.welcome{
+  padding-top: 4%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-bottom: 3px solid white;
+
+}
+.welcome h1{
+  text-align: center;
+}
+
+.ComingSoon{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+
+/*-------------------------------------mobile responsive-------------------------------*/
+
+@media screen and (max-width: 600px) {
+  body{
+    overflow-x: hidden;
+  }
+
+}
+
+/*-------------------------------------tablet responsive-------------------------------*/
+@media screen and (max-width: 1024px) {
+  body{
+    overflow-x: hidden;
+  }
+
+}
