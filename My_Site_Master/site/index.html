@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYW8ZYFNKG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZYW8ZYFNKG');
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">   <title>My Site - Home Page</title>
   <link rel ="stylesheet" href= "resetStandard1.css">
@@ -33,14 +43,11 @@
       <li><a href="AboutMe.html">About Us</a></li>
     </ul>
   </nav>
-  <div class="mainImage2" style="width: 50% !important">
-    <img
-    sizes="100%"
-    srcset="
-      images/desktop/ex3-ios.png 1831w,
-      images/desktop/ex3-ios@2x.png 3662w,
-      images/desktop/ex3-ios@3x.png 5293w"
-    alt="Business Meeting">
+  <div class="mainImage2">
+    <img src= "images/mainimage2.png" alt="Business Meeting" class="responsive" width="100%" height="50%">
+      <div class="intro">
+        <h1>Design.  Develop.  Deliver.</h1>
+      </div>
   </div>
   <label for="nav-toggle" class="nav-toggle-label">
     <span></span>
@@ -138,7 +145,7 @@
             <br>about your current site, if you one, and
             <br>discuss the opportunity and help that we
             <br>can offer you.</p>
-        <button class="button button1">Let's Book</button>
+        <a href="Contact.html" class="button button1">Let's Book</a>
         </div>
         <div class="path19">
           <img src="images/Path 19.png" width="350" height="120">
@@ -190,7 +197,7 @@
           </div>
           <div class="contact">
             <h1>Contact Us</h1>
-              <p>MyLinkPad@MyLinkPad.com</p>
+              <p>Gabe@MyLinkPad.com</p>
           </div>
       </div>
     </div>

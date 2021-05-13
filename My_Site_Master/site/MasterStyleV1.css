@@ -10,6 +10,17 @@
   position: absolute;
   width:100%;
 }
+.intro h1{
+    position:absolute;
+    margin-top:-30%;
+    font-size: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight:bold;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
 .middle {
   position: relative;
   width:100%;
@@ -129,6 +140,7 @@
   background-color: #9fc131;;
   color:white;
   cursor: pointer;
+  text-decoration: none;
 }
 .Caroucontainer{
   margin-left: auto;
@@ -288,6 +300,7 @@ nav{
   .mainImage{
     margin-top:0%;
   }
+
   .card{
     margin:0%;
     width: 100%;
@@ -370,6 +383,7 @@ nav{
   .logo-small{
     display:none;
   }
+
   .card{
     display:flex;
     flex-wrap:wrap;
@@ -380,14 +394,15 @@ nav{
     border-radius: 5px;
   }
 
+
 }
 
 .welcome{
-  padding-top: 4%;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+padding-top: 2%;
+align-items: center;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 2%;
 
 }
 .welcome h1{
@@ -398,6 +413,8 @@ nav{
   margin-top: 10%;
   margin-bottom: 10%;
   text-align: center;
+  font-family: 'Bitter', serif;
+  color: white;
 }
 
 
@@ -415,6 +432,9 @@ nav{
 
 .WWD h1{
   text-align: center;
+  color:white;
+  font-family: 'Bitter', serif;
+
 }
 /*
 .WWD hr{
@@ -436,64 +456,72 @@ nav{
   margin-right: auto;
 }
 .allservices{
-  padding-top: 3%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width:100%;
+
   color: white;
 }
 .first3Services{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   padding-bottom: 5%;
   padding-top: 5%;
+  margin: 0% 5% -5% 5%;
 }
 
 .first3Services p{
+  margin-top:10%;
+  font-size:20px;
   text-align: left;
 }
 .first3Services li{
   text-align: left;
+  font-size: 15px;
 }
 .service1{
-  width: 15%;
+  width: 25%;
 }
 
 .service2{
-  width: 15%;
+  width: 25%;
 }
 
 .service3{
-  width: 15%;
+  width: 25%;
 }
 .second3services{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
   padding-bottom: 5%;
+  padding-top: 5%;
+  margin: 0% 5% 0% 5%;
 }
 
 .second3services p{
+  margin-top:10%;
+  font-size:20px;
   text-align: left;
 }
 .second3services li{
   text-align: left;
+  font-size: 15px;
 }
 .service4{
-  width: 15%;
+width:25%;
 }
 .service5{
-  width: 15%;
+  width: 25%;
 }
 .service6{
-  width: 15%;
+  width: 25%;
 }
 
 /*-------------------------------------services mobile responsive-------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
 
 .first3Services{
   align-items: center;
@@ -536,40 +564,45 @@ nav{
 /*-------------------------------------tablet responsive-------------------------------*/
 @media screen and (max-width: 1024px) {
 
+.intro{
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+font-weight: bold;
+left: 0;
+right: 0;
+text-align: center;
+}
+}
   .first3Services{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+
   }
   .service1{
-    width: 70%;
+    margin-right:10%;
     padding-bottom: 5%;
 
   }
   .service2{
-    width: 70%;
+    margin-right:10%;
     padding-bottom: 5%;
   }
   .service3{
-    width: 70%;
     padding-bottom: 5%;
   }
 
   .second3services{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+
   }
   .service4{
-    width: 70%;
+    margin-right:10%;
     padding-bottom: 5%;
   }
   .service5{
-    width: 70%;
+    margin-right:10%;
     padding-bottom: 5%;
   }
   .service6{
-    width: 70%;
+
     padding-bottom: 5%;
     }
 
@@ -588,7 +621,16 @@ nav{
 }
 
 .AboutTitle h1{
+  padding-top:4%;
+  padding-bottom:3.6%;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  border-bottom: 3px solid white;
+  font-family: 'Bitter', serif;
   text-align: center;
+  color: white;
 }
 
 /*
@@ -827,6 +869,7 @@ color: white;
 
 input{
   width: 100%;
+  line-height: 34px;
 }
 
 textarea{
@@ -848,7 +891,7 @@ textarea{
   display: flex;
   justify-content: center;
   text-align: center;
-  padding-bottom: 1%;
+  padding-bottom:2%;
 }
 
 .firstname{
@@ -917,7 +960,7 @@ input{
 }
 /*-------------------------------------contact mobile responsive-------------------------------*/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 950px) {
   body{
     overflow-x: hidden;
   }
@@ -1145,12 +1188,12 @@ nav{
   justify-content: center;
   z-index:999;
 }
-
   .mainImage{
     margin-top:2%;
   }
-  .mainImage2{
-    width: 50%;
+  .responsive{
+    max-width:100%;
+    height:auto;
   }
   .card{
     margin:5%;
